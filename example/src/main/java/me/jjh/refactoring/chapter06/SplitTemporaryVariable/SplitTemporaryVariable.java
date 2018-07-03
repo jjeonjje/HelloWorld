@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.SplitTemporaryVariable;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 임시변수 분리
  * 
@@ -60,4 +65,13 @@ public class SplitTemporaryVariable {
 		return result;
 	}	
 
+	@Test
+	public void 임시변수_분리() {
+		SplitTemporaryVariable splitTemporaryVariable = new SplitTemporaryVariable();
+		
+		double distanceTravelled = splitTemporaryVariable.getDistanceTravelled(10);
+		double distanceTravelled_re = splitTemporaryVariable.getDistanceTravelled_refactoring(10);
+		
+		assertThat(distanceTravelled, is(distanceTravelled_re));
+	}
 }

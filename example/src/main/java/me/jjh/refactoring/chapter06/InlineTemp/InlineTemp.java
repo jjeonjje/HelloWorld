@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.InlineTemp;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 임시변수 내용 직접 삽입
  * 
@@ -39,5 +44,15 @@ public class InlineTemp {
 	public boolean priceCheck_refactoring() {
 		return (order.getBasePrice() > 1000);
 	}	
+
+	@Test
+	public void 임시변수_내용_직접_삽입() {
+		InlineTemp inlineTemp = new InlineTemp();
+		
+		boolean check = inlineTemp.priceCheck();
+		boolean check_re = inlineTemp.priceCheck_refactoring();
+		
+		assertThat(check, is(check_re));
+	}
 	
 }

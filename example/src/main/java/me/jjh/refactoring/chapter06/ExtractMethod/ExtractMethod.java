@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * 메서드 추출
  * 
@@ -71,5 +73,14 @@ public class ExtractMethod {
 			result += each.getAmount();
 		}
 		return result;
+	}	
+	
+	
+	@Test
+	public void 매서드_추출() {
+		ExtractMethod extractMethod = new ExtractMethod();
+		
+		extractMethod.prictOwing();
+		extractMethod.prictOwing_refactoring();
 	}	
 }

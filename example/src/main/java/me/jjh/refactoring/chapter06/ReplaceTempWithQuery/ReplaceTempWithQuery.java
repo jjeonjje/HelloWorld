@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.ReplaceTempWithQuery;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 임시변수를 메서드 호출로 전환
  * 
@@ -45,4 +50,13 @@ public class ReplaceTempWithQuery {
 		else return 0.98;
 	}
 	
+	@Test
+	public void 임시변수를_메서드_호출로_전환() {
+		ReplaceTempWithQuery replaceTempWithQuery = new ReplaceTempWithQuery();
+		
+		double price = replaceTempWithQuery.getPrice();
+		double price_re = replaceTempWithQuery.getPrice_refactoring();
+		
+		assertThat(price, is(price_re));
+	}
 }

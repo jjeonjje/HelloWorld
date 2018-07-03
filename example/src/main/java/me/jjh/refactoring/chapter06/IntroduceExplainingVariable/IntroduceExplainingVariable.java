@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.IntroduceExplainingVariable;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 직관적 임시변수 사용
  * 
@@ -58,4 +63,13 @@ public class IntroduceExplainingVariable {
 		return Math.min(basePrice() * 0.1, 100.0);
 	}
 
+	@Test
+	public void 직관적_임시변수_사용() {
+		IntroduceExplainingVariable explainingVariable = new IntroduceExplainingVariable();
+		
+		double price = explainingVariable.price();
+		double price_re = explainingVariable.price_refactoring();
+		
+		assertThat(price, is(price_re));
+	}
 }

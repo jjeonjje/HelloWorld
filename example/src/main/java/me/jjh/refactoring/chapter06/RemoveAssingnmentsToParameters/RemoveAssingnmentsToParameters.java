@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.RemoveAssingnmentsToParameters;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 매개변수로의 값 대입 제거
  * 
@@ -43,4 +48,14 @@ public class RemoveAssingnmentsToParameters {
 		if (yearTodate > 10000) result -= 4;
 		return result;
 	}
+	
+	@Test
+	public void 매개변수로의_값_대입_제거() {
+		RemoveAssingnmentsToParameters assingnmentsToParameters = new RemoveAssingnmentsToParameters();
+		
+		double discount = assingnmentsToParameters.discount(10, 1000, 10000);
+		double discount_re = assingnmentsToParameters.discount_refactoring(10, 1000, 10000);
+		
+		assertThat(discount, is(discount_re));
+	}	
 }

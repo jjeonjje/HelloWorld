@@ -1,7 +1,12 @@
 package me.jjh.refactoring.chapter06.SubstituteAlgorithm;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 import java.util.Arrays;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * 알고리즘 전환
@@ -49,4 +54,13 @@ public class SubstituteAlgorithm {
 		return "";
 	}	
 	
+	@Test
+	public void 알고리즘_전환() {
+		SubstituteAlgorithm algorithm = new SubstituteAlgorithm();
+		
+		String person1 = algorithm.foundPerson(new String[] {"Don"});
+		String person2 = algorithm.foundPerson_refactoring(new String[] {"Don"});
+		
+		assertThat(person1, is(person2));
+	}	
 }

@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.ReplaceMethodWithMethodObject;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 메서드를 메서드 객체로 전환
  * 
@@ -47,4 +52,13 @@ public class Account {
 		return new Gamma(this, inputVal, quantity, yearToDate).compute();
 	}	
 	
+	@Test
+	public void 메서드를_메서드_객체로_전환() {
+		Account account = new Account();
+		
+		int account1 = account.gamma(10, 100, 1000);
+		int account2 = account.gamma_refactoring(10, 100, 1000);
+		
+		assertThat(account1, is(account2));
+	}	
 }

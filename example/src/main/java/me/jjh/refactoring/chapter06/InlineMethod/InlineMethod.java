@@ -1,5 +1,10 @@
 package me.jjh.refactoring.chapter06.InlineMethod;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * 메서드 내용 직접 삽입
  * 
@@ -33,4 +38,14 @@ public class InlineMethod {
 	public int getRating_refactoring() {
 		return (_numberOfLateDeliveries > 5) ? 2: 1;
 	}
+	
+	@Test
+	public void 메서드_내용_직접_삽입() {
+		InlineMethod inlineMethod = new InlineMethod();
+		
+		int rating = inlineMethod.getRating();
+		int rating_re = inlineMethod.getRating_refactoring();
+		
+		assertThat(rating, is(rating_re));
+	}	
 }
