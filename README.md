@@ -15,3 +15,13 @@
 * [매개변수로의 값 대입 제거](chapter06/7.RemoveAssingnmentsToParameters.md)
 * [매서드를 메서드 객체로 전환](chapter06/8.ReplaceMethodWithMethodObject.md)
 * [알고리즘 전환](chapter06/9.SubstituteAlgorithm.md)
+
+## 2. 객체 간의 기능 이동
+* [메서드 이동](chapter07/1.MoveMethod.md)
+* [필드 이동](chapter07/2.MoveField.md)
+* [클래스 추출](chapter07/3.ExtractClass.md)
+* [클래스 내용 직접 삽입](chapter07/4.InlineClass.md)
+* [대리 객체 은폐](chapter07/5.HideDelegate.md)
+* [과잉 중개 메서드 제거](chapter07/6.RemoveMiddleMan.md)
+* [외래 클래스에 메서드 추가](chapter07/7.IntroduceForeignMethod.md)
+* [국소적 상속확장 클래스 사용](chapter07/8.IntroduceLocalExtension.md)
