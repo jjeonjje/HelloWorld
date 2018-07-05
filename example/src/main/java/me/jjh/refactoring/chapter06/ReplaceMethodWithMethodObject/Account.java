@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 public class Account {
 	
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @param inputVal
 	 * @param quantity
 	 * @param yearToDate
@@ -42,7 +42,7 @@ public class Account {
 	}
 	
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 * @param inputVal
 	 * @param quantity
 	 * @param yearToDate

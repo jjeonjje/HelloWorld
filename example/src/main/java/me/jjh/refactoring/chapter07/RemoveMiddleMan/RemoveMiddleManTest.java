@@ -21,12 +21,12 @@ public class RemoveMiddleManTest {
 	@Test
 	public void 대리_객체_은폐() {
 
-		// 리펙토링 전
+		// 리팩토링 전
 		Person person1 = new Person();
 		person1.set_department(new Department(person1));
 		person1.getManager();
 		
-		// 리펙토링 후
+		// 리팩토링 후
 		Person_refactoring person2 = new Person_refactoring();
 		person2.set_department(new Department_refactoring(person2));
 		person2.getDepartment().getManager();

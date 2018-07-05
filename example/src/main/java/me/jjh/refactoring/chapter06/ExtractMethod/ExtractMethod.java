@@ -20,7 +20,7 @@ public class ExtractMethod {
 	List<Order> _orderList = Arrays.asList(new Order(1000), new Order(2000), new Order(3000));
 
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 */
 	public void prictOwing() {
 		
@@ -44,7 +44,7 @@ public class ExtractMethod {
 	}
 	
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 */
 	public void prictOwing_refactoring() {
 		pringBanner();

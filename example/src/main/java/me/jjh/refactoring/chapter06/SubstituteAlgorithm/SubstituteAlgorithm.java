@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
 public class SubstituteAlgorithm {
 
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @param people
 	 * @return
 	 */
@@ -40,7 +40,7 @@ public class SubstituteAlgorithm {
 	}
 	
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 * @param people
 	 * @return
 	 */

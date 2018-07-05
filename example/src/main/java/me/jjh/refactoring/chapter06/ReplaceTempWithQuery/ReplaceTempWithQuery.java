@@ -21,7 +21,7 @@ public class ReplaceTempWithQuery {
 	int _itemPrice = 1000;
 	
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @return
 	 */
 	public double getPrice() {
@@ -33,7 +33,7 @@ public class ReplaceTempWithQuery {
 	}
 
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 * - 임시변수 basePrice, discountFactor를 메서드 호출로 전환
 	 * @return
 	 */

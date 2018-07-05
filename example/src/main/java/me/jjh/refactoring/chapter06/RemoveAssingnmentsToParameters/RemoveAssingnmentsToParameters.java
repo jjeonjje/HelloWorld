@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
 public class RemoveAssingnmentsToParameters {
 
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @param inputVal
 	 * @param quantity
 	 * @param yearTodate
@@ -31,7 +31,7 @@ public class RemoveAssingnmentsToParameters {
 	}
 
 	/**
-	 * 리펙토링 후 
+	 * 리팩토링 후 
 	 * 
 	 * - 매개변수를 임시변수 result로 변경
 	 * - 강제 적용하고자 하면 final 키워드를 사용

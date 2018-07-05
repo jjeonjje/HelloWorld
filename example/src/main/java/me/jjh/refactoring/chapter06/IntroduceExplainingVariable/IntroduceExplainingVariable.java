@@ -19,7 +19,7 @@ public class IntroduceExplainingVariable {
 	private double _itemPrice = 9560;
 	
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @return
 	 */
 	public double price() {
@@ -33,7 +33,7 @@ public class IntroduceExplainingVariable {
 	
 	
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 * - 복잡한 수식을 임시변수로 대입하여 수식 간소화
 	 * - 하지만 될 수 있으면 메서드 추출 기법을 이용하자.
 	 * @return

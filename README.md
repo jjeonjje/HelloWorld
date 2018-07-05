@@ -1,4 +1,4 @@
-# 리펙토링 정리
+# 리팩토링 정리
 
 <https://book.naver.com/bookdb/book_detail.nhn?bid=7047630>
 

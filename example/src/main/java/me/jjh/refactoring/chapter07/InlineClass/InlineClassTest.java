@@ -23,13 +23,13 @@ public class InlineClassTest {
 	@Test
 	public void 클래스_내용_직접_삽입() {
 		
-		// 리펙토링 전
+		// 리팩토링 전
 		Person person1 = new Person();
 		TelephoneNumber tel = person1.get_officeTelephone();
 		tel.set_areaCode("02");
 		tel.set_number("12345678");
 		
-		// 리펙토링 후
+		// 리팩토링 후
 		Person_refactoring person2 = new Person_refactoring();
 		person2.set_officeAreaCode("02");
 		person2.set_officeNumber("12345678");

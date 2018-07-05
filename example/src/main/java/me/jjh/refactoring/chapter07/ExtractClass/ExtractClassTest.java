@@ -24,12 +24,12 @@ public class ExtractClassTest {
 	@Test
 	public void 클래스_추출() {
 		
-		// 리펙토링 전
+		// 리팩토링 전
 		Person person1 = new Person();
 		person1.set_officeAreaCode("02");
 		person1.set_officeNumber("12345678");
 		
-		// 리펙토링 후
+		// 리팩토링 후
 		Person_refactoring person2 = new Person_refactoring();
 		TelephoneNumber tel = person2.get_officeTelephone();
 		tel.set_areaCode("02");

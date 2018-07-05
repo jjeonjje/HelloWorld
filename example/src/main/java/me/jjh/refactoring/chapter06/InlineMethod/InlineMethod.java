@@ -19,7 +19,7 @@ public class InlineMethod {
 	int _numberOfLateDeliveries = 1;
 	
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @return
 	 */
 	public int getRating() {
@@ -31,7 +31,7 @@ public class InlineMethod {
 	}	
 	
 	/**
-	 * 리펙토링 후
+	 * 리팩토링 후
 	 * - 단순 기능은 moreThanFineLateDeliveries() 메서드 삭제
 	 * @return
 	 */

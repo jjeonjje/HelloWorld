@@ -21,7 +21,7 @@ public class SplitTemporaryVariable {
 	private int _delay;
 	
 	/**
-	 * 리펙토링 전
+	 * 리팩토링 전
 	 * @param time
 	 * @return
 	 */
@@ -43,7 +43,7 @@ public class SplitTemporaryVariable {
 	
 	
 	/**
-	 * 리펙토링 후 
+	 * 리팩토링 후 
 	 * - acc 값이 두 번 대입되는것을 각 용도에 맞게 분리
 	 * - acc -> primaryAcc , secondaryAcc
 	 * @param time

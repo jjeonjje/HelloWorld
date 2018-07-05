@@ -26,10 +26,10 @@ public class IntroduceForeignMethod {
 		
 		Date previousEnd = new Date();
 		
-		// 리펙토링 전
+		// 리팩토링 전
 		Date newStart1 = new Date(previousEnd.getYear(),previousEnd.getMonth(),previousEnd.getDate() + 1);
 		
-		// 리펙토링 후
+		// 리팩토링 후
 		Date newStart2 = nextDay(previousEnd);
 		
 		assertThat(newStart1,is(newStart2));
