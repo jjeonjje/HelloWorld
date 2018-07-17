@@ -6,7 +6,7 @@ public abstract class Employee_refactoring {
 	static final int SALESMAN = 1;
 	static final int MANAGER = 2;
 	
-	abstract int getType();
+	public abstract int getType();
 	
 	public static Employee_refactoring create(int type) {
 		switch(type) {

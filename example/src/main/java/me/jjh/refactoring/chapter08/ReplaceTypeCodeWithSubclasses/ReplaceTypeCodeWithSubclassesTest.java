@@ -27,7 +27,7 @@ public class ReplaceTypeCodeWithSubclassesTest {
 		/* 리팩토링 후 */
 		Employee_refactoring emp_re = Employee_refactoring.create(0);
 		
-		assertThat(emp.getType(), is(emp.getType()));
+		assertThat(emp.getType(), is(emp_re.getType()));
 	}
 	
 }

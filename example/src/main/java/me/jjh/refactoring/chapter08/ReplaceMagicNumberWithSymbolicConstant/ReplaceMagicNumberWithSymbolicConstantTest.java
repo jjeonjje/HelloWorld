@@ -15,9 +15,6 @@ import org.junit.jupiter.api.Test;
  */
 public class ReplaceMagicNumberWithSymbolicConstantTest {
 
-	private double mass = 10000;
-	private double height = 100;
-	
 	// 리팩토링 전
 	double potentialEnergy(double mass, double height) {
 		return mass * 9.81 * height;
